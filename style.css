@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    opacity: 1;
+    margin-top: 205px;
+    left: 550px;
+    box-shadow: 0px 10px 36px 16px rgba(0,0,0,0.1);
+    position: absolute;
+    z-index: 2;
+}
+
+.main-title {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 80px;
+    left: 330px;
+}
+
+.quote {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 140px;
+    left: 550px;
+}
+
+.game--title {
+    padding-top: 20px;
+    color: #39aae3;
+    font-size: 50px;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 150px;
+    margin: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.game--status {
+    color: rgb(8, 18, 52);
+}
+
+.cell {
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #39aae3;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 0 1px rgb(8, 18, 52);
+    border: 1px solid rgb(8, 18, 52);
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+button {
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #39aae3;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    transition: 0.25s;
+    background-color: #2985a6;
+}
+section{
+    position: absolute;
+    z-index: 4;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 600px) {
+    section {
+        width: 320px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 310px;
+    }
+
+    .main-title {
+        top: 170px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .quote {
+        top: 250px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .game--container {
+        width: 100px;
+        margin: 10px 80px;
+    }
+
+    .cell {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .game--title {
+        font-size: 30px;
+    }
+
+    button {
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+    section{
+        position: absolute;
+        z-index: 2;
+    }
+}
+@media (min-width: 600px) and (max-width: 1220px) {
+    .main-title {
+        top: 300px;
+        left: 50px;
+        right: 20px;
+        position: absolute;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .quote {
+        top: 420px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    section {
+        width: 360px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 680px;
+    }
+    .game--container {
+        width: 100px;
+        margin: 10px 90px;
+    }
+}

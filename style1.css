@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 9, 30);
+}
+
+#test {
+    position: absolute;
+    z-index: 1;
+}
